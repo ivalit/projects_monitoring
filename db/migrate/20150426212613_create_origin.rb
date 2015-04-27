@@ -1,4 +1,4 @@
-class CreateOrigins < ActiveRecord::Migration
+class CreateOrigin < ActiveRecord::Migration
   def change
     create_table :origins do |t|
       t.string :source

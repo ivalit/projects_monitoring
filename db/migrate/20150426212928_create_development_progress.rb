@@ -1,4 +1,4 @@
-class CreateDevelopmentProgresses < ActiveRecord::Migration
+class CreateDevelopmentProgress < ActiveRecord::Migration
   def change
     create_table :development_progresses do |t|
       t.integer :progress
