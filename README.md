@@ -1,1 +1,1 @@
-## Information system for competition of students project
+## Information system for competition of student projects
