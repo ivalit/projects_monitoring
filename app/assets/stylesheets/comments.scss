@@ -1,0 +1,29 @@
+// Place all the styles related to the comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.comment{
+  padding-top: 15px;
+}
+
+.comment_body{
+  text-align: justify;
+}
+.comment_head{
+  padding: 0px 0px 6px 0px;
+  width: 100%;
+  display: table;
+}
+.author, .created_at{
+  display: table-cell;
+}
+
+.created_at{
+  text-align: right;
+}
+
+.comment_head {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: #787878;
+}

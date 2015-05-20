@@ -1,8 +1,9 @@
 .panel.panel-default
   / Default panel contents
-  .panel-heading Panel heading
+  .panel-heading Поточні проекти
   .panel-body
-    %p ...
+    = render 'projects/new'
+    = render 'projects/control_panel'
   / Table
   %table.table
     %thead
@@ -12,17 +13,12 @@
         %th Team
         %th Progress
         %th Created At
+
     %tbody
+    - @projects.each do |project|
       %tr
-        %th 1
-        %td Project 1
+        %th= project.id
+        %td= link_to project.name, project
         %td Team 1
-        %td 50%
-        %td 25.02.2015
-    %tbody
-      %tr
-        %th 2
-        %td Project 2
-        %td Team 2
-        %td 10%
-        %td 25.02.2015
+        %td= project.last_progress
+        %td= project.updated_at

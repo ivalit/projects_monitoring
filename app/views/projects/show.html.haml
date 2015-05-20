@@ -1,0 +1,27 @@
+.col-md-2
+  = render 'projects/menu_project'
+.col-md-7
+  %h3= @project.name
+  %table.table
+    %thead
+    %tbody
+      %tr
+        %th Id:
+        %td= @project.id
+      %tr
+        %th Назва:
+        %td= @project.name
+      %tr
+        %th Опис:
+        %td= @project.description
+      %tr
+        %th Тип роботи:
+        %td= @project.type_of_work
+      %tr
+        %th Походження теми:
+        %td= @project.origin
+      %tr
+        %th Куратор:
+        %td= @project.curator
+  =render :partial => 'comments/comment'
+.col-md-3

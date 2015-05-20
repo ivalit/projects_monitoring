@@ -64,3 +64,9 @@ p {
     font-size: 1.1em;
     line-height: 1.7em;
 }
+
+/** @group buttons **/
+.savebtn { display: none;}
+.savebtn:hover { color: #fff; background: #607db7; text-decoration: none; }
+.savebtn:active { background: #556790; }
+.hover { background: #fffbe1; }

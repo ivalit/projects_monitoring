@@ -1,0 +1,13 @@
+.list-group
+  %a.list-group-item.active{:href => "#"}
+    Cras justo odio
+  .list-group-item
+    = link_to "Всі проекти", root_path
+  .list-group-item
+    = link_to "Поточний проект", @project
+  .list-group-item
+    = link_to "Критерії",  controller: 'marks', action: "show"
+  .list-group-item
+    = link_to "Прогрес", @project
+  .list-group-item
+    = link_to "Поточний проект", @project

@@ -1,0 +1,4 @@
+.comment-form
+  = form_for([@project, @comment], remote: true) do |f|
+    = f.text_area :body
+    = f.submit 'Submit', class: 'btn btn-default'

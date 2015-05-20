@@ -5,7 +5,7 @@ class CreateProjects < ActiveRecord::Migration
       t.text :description
       t.belongs_to :origin, index: true
       t.belongs_to :type_of_work, index: true
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end

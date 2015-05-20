@@ -1,0 +1,8 @@
+= render 'comments/form'
+- @comments.each do |comment|
+  .comment
+    .comment_head
+      -#.author= "Автор: #{comment.author}"
+      .created_at= "Дата: "
+    .comment_body
+      =comment.body

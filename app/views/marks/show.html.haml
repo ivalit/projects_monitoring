@@ -1,0 +1,22 @@
+.col-md-2
+  = render 'projects/menu_project'
+.col-md-7
+  %h3= @project.name
+  %table.table
+    %thead
+    %tbody
+      -@criteria.each do |cr|
+        %tr
+          %th= "#{cr.criterion}:"
+          %td
+            %span{:id => "criterion_#{cr.id}", :class => "datainfo"}
+              -@marks.each do |mark|
+                -if (cr.id).equal? mark.criterion_id
+                  %span{:id => "mark_#{mark.id}", :display => false}
+                  =mark.mark
+            %a.editlink{:href => "#"} Edit Info
+            %a.savebtn Save
+          %td
+            =link_to "E"
+
+.col-md-3

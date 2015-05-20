@@ -4,7 +4,7 @@ class CreateMarks < ActiveRecord::Migration
       t.integer :mark
       t.belongs_to :project, index: true
       t.belongs_to :criterion, index: true
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end
